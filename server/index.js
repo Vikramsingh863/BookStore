@@ -11,8 +11,8 @@ import cors from 'cors'
 const PORT = 5500||process.env.PORT;
 const app = express();
 app.use(cors({
-  origin: "https://book-store-gold-one.vercel.app/",
-  credentials:true,
+  origin: "https://book-store-gold-one.vercel.app",
+  // credentials:true,
   // allowedHeaders: 'Content-Type,Authorization' 
 }))
 

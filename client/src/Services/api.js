@@ -84,7 +84,7 @@ export const getReportbyBookId = async (bookId) => {
 
 
 
-// 1. Get all users
+ // Get all users
 export const getAllUsers = async () => {
     try {
         const response = await axios.get(`${API_URL}/users`);
@@ -95,7 +95,7 @@ export const getAllUsers = async () => {
     }
 };
 
-// 2. Get a user by ID
+//  Get a user by ID
 export const getUserById = async (id) => {
     try {
         const response = await axios.get(`${API_URL}/users/${id}`);
@@ -105,7 +105,7 @@ export const getUserById = async (id) => {
     }
 };
 
-// 3. Create a new user
+//  Create a new user
 export const createUser = async (userData) => {
     try {
         const response = await axios.post(`${API_URL}/users`, userData);
