@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for your API
-const API_URL = 'http://localhost:5500';
+const API_URL = 'https://bookstore-um8m.onrender.com';
 
 // Get all books
 export const getAllBooks = async () => {

@@ -11,7 +11,7 @@ import cors from 'cors'
 const PORT = 5500||process.env.PORT;
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "*",
   credentials:true,
   // allowedHeaders: 'Content-Type,Authorization' 
 }))

@@ -70,22 +70,12 @@ export default function Home() {
     setValue(newValue);
   }, []);
 
-  // Memoize valuetext to avoid re-creation on every render
-  // const valuetext = useCallback((value) => {
-  //   return `${value}°C`;
-  // }, [users]);
-
+  
   // Optional: Memoize the slider value if the logic to compute it is complex
   const memoizedValue = useMemo(() => value, [value]);
 
-  // Logging the value to console (only for debugging purpose)
-  
-
-
-
-
   useEffect(() => {
-    setUniqueCategories(getUniqueCategories(books));
+    books&&setUniqueCategories(getUniqueCategories(books));
   }, [books]);
 
 
